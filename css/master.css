@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin-top: 50px;
+	font-family: Arial, Calibri, sans-serif;
+	display: inline-flex;
+	width: 100%;
+}
+
+.area1 {
+	max-width: 50%;
+	width: 800px;
+	min-height: 100%;
+	overflow: auto;
+	margin: 10px;
+}
+
+.area2 {
+	margin: 10px;
+	max-width: 50%;
+	width: 500px;
+	min-height: 100%;
+}
+
+.area2 h2, h3 {
+	padding: 10px 0px;
+}
+
+.area2 p {
+	padding: 3px 0px;
+}
+
+.area2 p strong {
+	font-size: 95%
+}
+
+.buttonArea {
+	margin: 10px;
+}
+
+button {
+	margin: 0px 5px;
+}

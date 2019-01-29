@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Image Labeling Tool</title>
+  </head>
+  <body>
+
+    <div class="area1">
+      <canvas id="imgCanvas"  style="cursor:crosshair">
+      </canvas>
+    </div>
+
+  <div class="area2">
+    <h2>Instruction:</h2>
+    <p>Kindly mark the point in clock-wise direction from top left.</p>
+    <p><strong>Example:</strong> Top Left -> Top Right -> Bottom Right -> Bottom Left.</p>
+
+    <!-- with input that accepts multiple files, notice the multiple attribute-->
+    <h3>Select the Images:</h3>
+    <input id="myfileinput" type="file" multiple accept="image/x-png,image/gif,image/jpeg">
+    <br>
+
+    <div class="buttonArea">
+      <button onclick="undo()" >Undo</button>
+      <button onclick="clear_can()">Clear</button>
+      <button onclick="next()" >Next</button>
+      <button onclick="saveTextAsFile()" >Save</button>
+    </div>
+
+    <textarea id="textarea" disabled="disabled" style="width:500px; height:100px;">
+    </textarea>
+
+  </div>
+
+
+    <script type="text/javascript" src="base.js"></script>
+
+  </body>
+</html>
